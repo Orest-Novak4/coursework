@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оголошення</title>
+    <link rel="stylesheet" href="ads.css">
+</head>
+<body>
+    <header>
+        <div class="logo">OLX</div>
+        <nav>
+            <a href="index3.html">Головна</a>
+            <a href="ads.html">Оголошення</a>
+            <a href="cart.html">Кошик</a>
+            <a href="about.html">Про нас</a>
+            <a href="help.html">Допомога</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Ваші оголошення</h1>
+            <p id="noAdsMessage">У вас ще немає власних оголошень.</p>
+            <div id="adsContainer"></div>
+            <button class="create-ad-btn" id="openModalBtn">Додати оголошення</button>
+            <p>Не знаєте, як створити оголошення? Перейдіть до <a href="help.html">розділу Допомога</a>.</p>
+        </section>
+    </main>
+
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal" id="createAdModal">
+        <div class="modal-header">
+            <h2>Додати оголошення</h2>
+            <button class="close-btn" id="closeModalBtn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <label for="adImage">Додати зображення</label>
+            <input type="file" id="adImage" accept="image/*">
+
+            <label for="adText">Текст оголошення</label>
+            <textarea id="adText" rows="4" placeholder="Введіть текст оголошення..."></textarea>
+
+            <button id="submitAdBtn">Опублікувати</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 OLX. Всі права захищені.</p>
+    </footer>
+
+    <script src="ads.js"></script>
+</body>
+</html>
